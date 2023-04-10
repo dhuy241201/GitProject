@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện tập tạo form</title>
+</head>
+<body>
+    <form action="google.com/" method="post"></form>
+    <fieldset style="font-family: 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, sans-serif;">
+    <h1>Order Form</h1>
+    <p>What would you like to buy?</p>
+    <select name="money">
+        <option value = "  ">A</option>
+        <option>B (+  0.5$)</option>
+        <option>C (+  0.5$)</option>
+    </select>
+    <p>How many would you like to order</p>
+    <input type="radio" name="rd"/> 1 - $10 <br/>
+     <input type="radio" name="rd"/> 2 - $20 <br/>
+     <input type="radio" name="rd"/> 3 - $25 <br/>
+    <p>Name <span style="color: red">*</span> </p>
+     <input type = "text" name="firstname" placeholder="FirstName" size="15"/>
+     <input type = "text" name="lastname" placeholder="LastName" size="15"/>
+    <p>Email</p>
+     <input type = "text" name="email" size="35"/>
+    <p>Phone Number</p>
+     <input type = "text" name="phone1" size="5" maxlength="4"> -
+     <input type = "text" name="phone2" size="5" maxlength="3"> -
+     <input type = "text" name="phone3" size="5" maxlength="3">
+     <br><br>
+     <input type="button" name="Submit" value="Submit">
+    </fieldset> 
+</body>
+</html>
