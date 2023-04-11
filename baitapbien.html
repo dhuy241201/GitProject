@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baitap</title>
+</head>
+<body>
+<fieldset>
+<legend>Bai 1</legend>
+    <script>
+        let diemLy =Number(prompt('Nhap diem Ly'));
+        let diemHoa =Number(prompt('Nhập điểm Hóa'));
+        let diemToan =Number(prompt('Nhập điểm Toán'));
+        let trungbinh = ((diemLy+diemHoa+diemToan)/3);
+        let tongdiem = (diemHoa+diemLy+diemToan);
+        document.write('Điểm trung bình: '+trungbinh);
+        document.write('<br/>')
+        document.write('Tổng điểm: '+tongdiem);
+    </script>
+</fieldset>
+<fieldset>
+<legend>Bài 2</legend>
+    <script>    
+        let doC=Number(prompt('Nhập nhiệt độ'))
+        let doF=(doC*9/5)+32
+        document.write('Giá trị nhiệt độ F là ' +doF)
+    </script>
+</fieldset>
+<fieldset>
+    <legend>Bài 3, Bài 4</legend>
+        <script>    
+            let bankinh=Number(prompt('Nhập bán kính đường tròn'))        
+            let chuvi=(bankinh*2*Math.PI)
+            let dientich=(Math.pow(bankinh,2)*Math.PI)
+            document.write('Chu vi đường tròn là '+chuvi)
+            document.write('<br/>')
+            document.write('Diện tích đường tròn là '+dientich)
+        </script>
+    </fieldset>
+</body>
+</html>
