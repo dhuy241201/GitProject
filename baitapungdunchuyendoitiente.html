@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển đổi tiền tệ</title>
+</head>
+<body>
+<table style="width: 500px; text-align: center;">
+    <tr>
+        <td>Amount</td>
+        <td>From Currency</td>
+        <td>To Currency</td>
+    </tr>
+    <tr>
+        <td><input type="number" id="Sotien"/></td>
+        <td>
+            <select name="chuyentu" id="From" style="width: 100px;">
+                <option value="VND" selected>VND</option>
+                <option value="USD">USD</option>
+            </select>
+        </td>
+        <td>
+            <select name="chuyensang" id="To" style="width: 100px">
+                <option value="VND">VND</option>
+                <option value="USD" selected>USD</option>
+            </select>
+        </td>
+        <td>
+            <button type="button" onclick="doiTien()">Convert</button>
+        </td>
+    </tr>
+</table>
+<p id="ketqua"></p>
+<script src="./baitapungdungchuyendoitiente.js"></script>
+</body>
+</html>
