@@ -8,25 +8,21 @@
 </head>
 <body>
     <script>
-    let a = Number(prompt());
-    let tien;
-    let bac1 = 1.678;
-    let bac2 = 1.734;
-    let bac3 = 2.014;
-    let bac4 = 2.536;
-    let bac5 = 2.834;
-    let bac6 = 2.927;
-    if(a<=50){
-        tien=a*bac1}
-    else 
-    if(a<=100){
-        tien=(50*bac1+(a-50)*bac2)
+    let userName = prompt("Who's there?", '');
+if (userName == 'Admin') {
+    let pass = prompt('Password?', '');
+    if (pass == 'TheMaster') {
+    	alert('Welcome!');
+    } else if (pass == null) {
+        alert('Canceled.');
+    } else {
+        alert('Wrong password');
     }
-    else if(a<200){
-        tien=(50*bac1+50*bac2+(a-100)*bac3)
-    }
-    document.write(tien)
-    console.log(2.014*a)
+} else if (userName == null) {
+    alert('Canceled');
+} else {
+    alert("I don't know you");
+}
     </script>
 </body>
 </html>
