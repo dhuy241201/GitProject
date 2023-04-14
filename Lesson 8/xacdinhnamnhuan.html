@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xác định năm nhuận</title>
+</head>
+<body>
+    <input id="sonam">
+    <button onclick="show()">Xác định</button>
+    <p id="ketqua"></p>
+<script>
+    
+function show(){
+    let sonam = document.getElementById('sonam').value;
+    let a;
+   if(sonam%4==0){
+    if(sonam%100==0){
+     if(sonam%400==0){
+        
+        a='namnhuan'}
+     else{
+       
+        a='khongphai'}
+    }
+    else{
+        
+        a='namnhuan'}
+    }
+    else{
+        
+        a='khongphai'
+    }
+    if(a=='namnhuan'){
+        document.getElementById('ketqua').innerHTML='Đây là năm nhuận'
+    }
+    else{
+        document.getElementById('ketqua').innerHTML='Đây không phải là năm nhuận'   
+    }
+}
+</script>
+</body>
+</html>
