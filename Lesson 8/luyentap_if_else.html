@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is</title>
+</head>
+<body>
+    <p>What is the "official" name of JavaScript ?></p>
+    <input type="text" id="noidung" placeholder="Write answer here">
+    <button onclick="ketqua()">Kết quả</button>
+    <p id="hienthi"></p>
+<script>
+    function ketqua(){
+        let a = document.getElementById('noidung').value;
+        if(a=='ECMAScript'|| a=='ecmascript'){
+        document.getElementById('hienthi').innerHTML='Right!';
+        }else{
+        document.getElementById('hienthi').innerHTML="Didn’t know? ECMAScript!"    
+        };
+    };
+</script>
+</body>
+</html>
