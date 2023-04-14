@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luyện tập HTML</title>
+</head>
+<body>
+    <fieldset>
+    <legend>Bài 1</legend>
+    <script>
+    let browser = prompt("Enter browser name!");
+    switch(browser){
+        case 'Edge': 
+        alert("You've got the Edge");
+        break;
+        case 'Chrome':
+        case 'Firefox':
+        case 'Safari':
+        case 'Opera':
+        alert("Okey we support these browsers too");
+        break;
+        default:
+        alert("We hope that this page looks ok!");
+    }
+    </script>
+    </fieldset>
+
+
+    <fieldset>
+    <legend>Bài 2</legend>
+    <script>
+       let a = +prompt ('a?');
+       switch(a){
+        case 0:
+            alert(0);
+        break;
+        case 1:
+            alert(1);
+        break;
+        case 2:
+        case 3:
+            alert('2,3');
+        break;
+       }
+    </script>
+    </fieldset>
+
+
+
+
+
+    <fieldset>
+    <legend>Bài 3</legend>
+    <script>
+      alert('Bài toán không thể sử dụng switch case vì hàm chỉ có thể dùng so sánh bằng. Trong trường hay này cần phải dùng if else')
+    </script>
+    </fieldset>
+</body>
+</html>
