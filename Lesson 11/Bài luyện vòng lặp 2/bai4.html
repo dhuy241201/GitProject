@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vẽ HCN</title>
+</head>
+<body>
+<script>
+    // let chieudai = parseInt(prompt('Nhập chiều dài'));
+    // let chieurong = parseInt(prompt('Nhập chiều rộng'));
+    let chieudai = 40;
+    let chieurong = 10;
+    function vechieudai(){
+        for(let i=1; i<=chieudai;i++){
+            document.write('*')
+        }
+            document.write('<br>')
+    }
+    function vechieurong(){
+            let j=1
+            let chieudai1 = chieudai*1.9
+            document.write('*')
+            while(j<=chieudai1){
+            document.write('&nbsp')
+            j++
+            }
+            document.write('*')
+            document.write('<br>')
+        }
+        
+vechieudai()
+for(let j=1 ; j<=chieurong-2; j++){vechieurong()}
+vechieudai()
+</script>
+</body>
+</html>

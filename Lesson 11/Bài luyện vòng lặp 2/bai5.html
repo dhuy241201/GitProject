@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính lãi ngân hàng</title>
+</head>
+<body>
+<script>
+    let sotien = parseInt(prompt('Nhập số tiền của bạn'));
+    let laisuat = parseInt(prompt('Nhập lãi suất theo tháng của ngân hàng (%)'));
+    let sothang = parseInt(prompt('Nhập số tháng gửi ngân hàng'))
+
+    let lainganhang = Math.floor((sotien*Math.pow((1+laisuat/100),sothang)) - sotien);
+    lai
+    document.write('Số tiền lãi của bạn là: '+lainganhang);
+</script>
+</body>
+</html>

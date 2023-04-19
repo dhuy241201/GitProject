@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+</head>
+<body>
+    <h1> Dãy số Fibonaci</h1>
+<script>
+        let soluong = parseInt(prompt('Nhập số lượng số Fibonaci muốn in'));
+        let hientai = 1;
+        let truoc1 = 0;
+        let truoc2 = 0;
+        let n = 1
+        for(n=1; n<=soluong; n++){
+        truoc2 = truoc1
+        truoc1 = hientai
+        hientai = truoc1 + truoc2
+        document.write('Số thứ '+n + ': ' + hientai + '<br>')
+        }
+</script>
+</body>
+</html>

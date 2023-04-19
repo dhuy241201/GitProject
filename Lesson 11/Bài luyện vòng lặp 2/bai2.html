@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính dai thừa một Số nguyên dương</title>
+</head>
+<body>
+<script>
+    let so = parseInt(prompt('Nhập số nguyên dương'));
+    let giaithua = 1;
+
+    //Kiểm tra số nguyên dương
+    if(Number.isInteger(so) && so>0){
+        let n = 1
+        for(n=1; n<=so; n++){
+            giaithua = giaithua * n
+        };
+    document.write(`Giai thừa của số bạn nhập là: ${giaithua}`);
+    }
+    else{
+        alert('Số bạn nhập không hợp lệ');
+    }
+</script>
+</body>
+</html>
