@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4</title>
+</head>
+<body>
+<script>
+    let hientai = 1;
+    let truoc1 = 0;
+    let truoc2 = 0;
+    for(n=1;n<=20;n++){
+        truoc2 = truoc1
+        truoc1 = hientai
+        hientai = truoc1 + truoc2
+        if(hientai%5==0){
+        document.write('Số chia hết cho 5 đầu tiên trong dãy Fibonaci là: '+hientai+'<br>')
+        break;
+    }
+    }
+</script>
+</body>
+</html>
