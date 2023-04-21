@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sự kiện chuột</title>
+</head>
+<body>
+    <img id="bong" src="ball.png" alt="ảnh trái bóng" style="height: 200px;">
+    <p>Bấm nút ở dưới để di chuyển trái bóng sang phải</p>
+    <button onclick="sangphai()" >Bấm vào</button>
+    <script>
+        let ball = null;
+        ball = document.getElementById('bong');
+
+        function dichuyen(){
+        ball = document.getElementById('bong');
+        ball.style.position ='relative';
+        ball.style.left = '0px';}
+
+        function sangphai(){
+        ball.style.left = parseInt(ball.style.left) + 10 + 'px';}
+        window.onload = dichuyen;
+    </script>
+</body>
+</html>

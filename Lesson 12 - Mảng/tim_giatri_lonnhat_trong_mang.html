@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm giá trị lớn nhất</title>
+</head>
+<body>
+<script>
+    let mang = [5,-2,3,6,8,3,4,-1,2,12];
+    let max = mang[0];
+    let vitri=0
+    for(let i = 1; i<mang.length; i++){
+        if (mang[i]>max){
+            max=mang[i]
+            vitri=i
+        }
+    }
+    document.write(`Số lớn nhất trong dãy là ${max} ở vị trí ${vitri}`)
+
+</script>
+</body>
+</html>

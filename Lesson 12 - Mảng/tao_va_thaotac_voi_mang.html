@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo và thao tác với mảng</title>
+</head>
+<body>
+    <h1>Hiển thị kết quả</h1>
+    <input id="phantu">
+    <button onclick="them()">Thêm</button>
+    <button onclick="hienthi()">Hiển thị</button>
+    <div id="ketqua"></div>
+<script>
+    let i=0
+    let mang = Array()
+    function them(){
+        mang[i]=document.getElementById('phantu').value;
+        alert(`Phần tử ${mang[i]} đã thêm vào vị trí ${i}`);
+        i++
+        document.getElementById('phantu').value=''
+    }
+    function hienthi(){
+        let e = '<hr/>'        
+        for (let i=0; i<mang.length; i++){
+        e += `Phần tử thứ ${i} = ${mang[i]}<br/>`       
+        }
+        document.getElementById('ketqua').innerHTML= e
+    }
+</script>
+</body>
+</html>

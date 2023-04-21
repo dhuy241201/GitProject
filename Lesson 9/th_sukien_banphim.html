@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sự kiện bàn phím</title>
+</head>
+<body onload="choigame()">
+    <img id="doraemon" src="doraemon.jpg" style="width: 150px; position:absolute; left: 0px; top: 0px;">
+<script>
+    function len(){
+    let dichuyen = document.getElementById('doraemon');
+        dichuyen.style.top = parseInt(dichuyen.style.top) - 10 + 'px';}
+    function xuong(){
+    let dichuyen = document.getElementById('doraemon');
+        dichuyen.style.top = parseInt(dichuyen.style.top) + 10 + 'px';}
+    function trai(){
+    let dichuyen=document.getElementById('doraemon');
+        dichuyen.style.left = parseInt(dichuyen.style.left) - 10 + 'px';}
+    function phai(){
+    let dichuyen = document.getElementById('doraemon');
+        dichuyen.style.left = parseInt(dichuyen.style.left) + 10 + 'px';}
+    function choi(play){
+        switch(play.keyCode){
+            case 37:
+                trai();
+                break;
+            case 38:
+                len();
+                break;
+            case 39:
+                phai();
+                break;
+            case 40:
+                xuong();
+                break;
+        }
+    }
+function choigame(){
+    window.addEventListener('keydown',choi);
+}
+</script>
+</body>
+</html>

@@ -8,21 +8,10 @@
 </head>
 <body>
     <script>
-    let userName = prompt("Who's there?", '');
-if (userName == 'Admin') {
-    let pass = prompt('Password?', '');
-    if (pass == 'TheMaster') {
-    	alert('Welcome!');
-    } else if (pass == null) {
-        alert('Canceled.');
-    } else {
-        alert('Wrong password');
+    for( var i=0; i<=100; i++){
+        document.write('Xin chào '+i+ ' lần')
+        document.write('<br/>')
     }
-} else if (userName == null) {
-    alert('Canceled');
-} else {
-    alert("I don't know you");
-}
     </script>
 </body>
 </html>

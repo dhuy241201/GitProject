@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Game Caro</h1>
+    <p id="banco"></p>
+    <button onclick="danhx()">Đánh</button>
+<script>
+    let mang=[]
+    let banco=""
+    for(let i=0; i<10; i++){
+        mang[i]= new Array(0,0,0,0,0,0,0,0,0,0);
+    }
+    for(let i=0; i<10; i++){
+        banco+= '<br/>'
+        for(let j=0; j<10; j++){
+            banco+=mang[i][j] + '&nbsp;&nbsp;';
+        }
+    }
+document.getElementById('banco').innerHTML=banco;
+function danhx(){
+    x = parseInt(prompt('Nhập vị trí (X)'));
+    y = parseInt(prompt('Nhập vị trí (Y)'));
+    banco='';
+    mang[x][y] = "x";
+    for (let i = 0; i < 10; i++) {
+        banco += "<br/>";
+        for (let j = 0; j < 10; j++) {
+            banco += mang[i][j] + "&nbsp;&nbsp;&nbsp;&nbsp;";
+        }
+    }
+    document.getElementById('banco').innterHTML= '<hr>'+banco
+}
+</script>
+</body>
+</html>
